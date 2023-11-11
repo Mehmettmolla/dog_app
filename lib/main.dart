@@ -1,4 +1,8 @@
+import 'package:dog_app/feature/home/view_model/home_view_model.dart';
+import 'package:dog_app/feature/splash/view/splash_view.dart';
+import 'package:dog_app/feature/splash/view_model/splash_view_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() => runApp(const MyApp());
 
@@ -7,15 +11,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<SplashViewModel>(
+          create: (context) => SplashViewModel(),
         ),
-        body: const Center(
-          child: Text('Hello World'),
+        BlocProvider<HomeViewModel>(
+          create: (context) => HomeViewModel(),
         ),
+      ],
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: SplashView()
       ),
     );
   }
