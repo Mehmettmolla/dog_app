@@ -87,6 +87,13 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Galano Grotesque
+      fonts:
+        - asset: assets/fonts/galano_grotesque/GalanoGrotesqueMedium.otf
+          weight: 500
+        - asset: assets/fonts/galano_grotesque/GalanoGrotesqueSemiBold.otf
+          weight: 600
   # fonts:
   #   - family: Schyler
   #     fonts:
