@@ -92,6 +92,9 @@ class _HomeViewState extends State<HomeView> {
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
       ),
+      padding: EdgeInsets.only(
+        bottom: AppSize.screenHeight(context) * 0.1,
+      ),
       shrinkWrap: true,
       itemCount: state.dogsBreedsList?.length,
       itemBuilder: (context, index) {
@@ -196,8 +199,11 @@ class _HomeViewState extends State<HomeView> {
             SizedBox(
                 height: AppSize.screenWidth(context) * 0.7,
                 width: AppSize.screenWidth(context) * 0.7,
-                child: CustomCachedImage(
-                    image: state.randomDogImageUrl, fit: BoxFit.fill)),
+                child: ClipRRect(
+                  borderRadius: AppRadius.radius12,
+                  child: CustomCachedImage(
+                      image: state.randomDogImageUrl, fit: BoxFit.fill),
+                )),
             AppPadding.defualtPadding.height,
             Container(
               padding: const EdgeInsets.all(AppPadding.spacingPadding),
@@ -304,6 +310,13 @@ class _HomeViewState extends State<HomeView> {
                                 .read<DogBreedsBloc>()
                                 .add(DogBreedsSearchEvent(value));
                             _setSearchQuery(value);
+                          },
+                          onSubmitted: (value) {
+                            context
+                                .read<DogBreedsBloc>()
+                                .add(DogBreedsSearchEvent(value));
+                            _setSearchQuery(value);
+                            Navigator.pop(context);
                           },
                         ),
                       ),
