@@ -8,6 +8,14 @@ class AppRouter extends $AppRouter {
  @override      
  List<AutoRoute> get routes => [      
   AutoRoute(page: SplashRoute.page, initial: true),
-  AutoRoute(page: HomeRoute.page),
+  AutoRoute(page: BaseScaffoldRoute.page, children: [
+    AutoRoute(page: HomeRoute.page, initial: true),
+    AutoRoute(page: EmptyRoute.page),
+  ]),
   ];    
 }    
+
+@RoutePage()
+class EmptyView extends AutoRouter {
+  const EmptyView({super.key});
+}

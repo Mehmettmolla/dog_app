@@ -17,6 +17,12 @@ class AppTextStyle {
     fontWeight: FontWeight.w600,
     color: AppColor.black,
   );
+      static TextStyle whiteMedium18 = const TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: AppColor.white,
+  );
+  
   static TextStyle whiteMedium16 = const TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w500,
