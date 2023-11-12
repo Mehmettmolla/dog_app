@@ -38,20 +38,3 @@ class HomeCard extends StatelessWidget {
     );
   }
 }
-
-//  Container(
-//       margin: const EdgeInsets.all(AppPadding.defualtPadding),
-//       child: Stack(
-//         alignment: Alignment.bottomLeft,
-//         children: [
-//           CustomCachedImage(
-//             url: image,
-//             fit: BoxFit.cover,
-//           ),
-//           Text(title ?? '', style: AppTextStyle.whiteMedium16,).paddingSymetric(
-//          horizontal: AppPadding.spacingPadding,
-//           vertical: AppPadding.spacingPadding,
-//           ),
-//         ],
-//       ),
-//     );

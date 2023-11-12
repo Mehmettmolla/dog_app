@@ -9,7 +9,7 @@ class CustomCachedImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.network(
       image!,
-      fit: BoxFit.cover,
+      fit: fit ?? BoxFit.cover,
       errorBuilder: (context, error, stackTrace) {
         return Center(
             child: Image.asset(
