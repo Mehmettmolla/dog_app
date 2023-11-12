@@ -1,6 +1,6 @@
 import 'package:dog_app/core/extension/num/num_extension.dart';
 import 'package:dog_app/core/extension/widget/widget_extension.dart';
-import 'package:dog_app/gen/assets.gen.dart';
+import 'package:dog_app/product/gen/assets.gen.dart';
 import 'package:dog_app/product/constant/app_padding.dart';
 import 'package:dog_app/product/constant/app_text_style.dart';
 import 'package:dog_app/product/widgets/divider/custom_divider.dart';

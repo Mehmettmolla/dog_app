@@ -1,11 +1,11 @@
 import 'dart:io';
 
-import 'package:dog_app/gen/assets.gen.dart';
+import 'package:dog_app/product/gen/assets.gen.dart';
 import 'package:dog_app/product/constant/app_padding.dart';
 import 'package:dog_app/product/constant/app_size.dart';
 import 'package:dog_app/product/constant/app_text_style.dart';
 import 'package:dog_app/product/models/settings/settings_model.dart';
-import 'package:dog_app/product/widgets/card/custom_settings_card.dart';
+import 'package:dog_app/feature/settings/widgets/card/custom_settings_card.dart';
 import 'package:dog_app/product/widgets/drag_handle/custom_drag_handle.dart';
 import 'package:flutter/material.dart';
 

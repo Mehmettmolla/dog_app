@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:dog_app/bloc/dog_breeds/dog_breeds_bloc.dart';
-import 'package:dog_app/gen/assets.gen.dart';
+import 'package:dog_app/product/gen/assets.gen.dart';
 import 'package:dog_app/product/constant/app_size.dart';
 import 'package:dog_app/product/router/app_router.gr.dart';
 import 'package:flutter/material.dart';

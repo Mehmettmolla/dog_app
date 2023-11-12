@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:dog_app/core/extension/widget/widget_extension.dart';
 import 'package:dog_app/feature/settings/view/settings_view.dart';
-import 'package:dog_app/gen/assets.gen.dart';
+import 'package:dog_app/product/gen/assets.gen.dart';
 import 'package:dog_app/product/constant/app_padding.dart';
 import 'package:dog_app/product/constant/app_text_style.dart';
 import 'package:dog_app/product/router/app_router.gr.dart';
