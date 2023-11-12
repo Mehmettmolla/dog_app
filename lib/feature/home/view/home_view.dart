@@ -1,6 +1,5 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:dog_app/bloc/dog_breeds/dog_breeds_bloc.dart';
-import 'package:dog_app/core/enum/loading_status/loading_status_enum.dart';
 import 'package:dog_app/core/extension/num/num_extension.dart';
 import 'package:dog_app/core/extension/widget/widget_extension.dart';
 import 'package:dog_app/feature/home/view/widgets/cards/home_card.dart';

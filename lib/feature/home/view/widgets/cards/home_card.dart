@@ -1,8 +1,4 @@
-
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:dog_app/core/extension/widget/widget_extension.dart';
-import 'package:dog_app/product/gen/assets.gen.dart';
 import 'package:dog_app/product/constant/app_padding.dart';
 import 'package:dog_app/product/constant/app_radius.dart';
 import 'package:dog_app/product/constant/app_size.dart';

@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return BlocProvider<DogBreedsBloc>(
       create: (context) =>  DogBreedsBloc(),
       child: MaterialApp.router(
+          title: 'Dog App',
           routerDelegate: appRouter.delegate(),
           routeInformationParser: appRouter.defaultRouteParser(),
           debugShowCheckedModeBanner: false,
