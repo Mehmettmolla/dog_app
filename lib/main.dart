@@ -1,22 +1,29 @@
+import 'package:dog_app/bloc/dog_breeds/dog_breeds_bloc.dart';
+import 'package:dog_app/product/gen/fonts.gen.dart';
+import 'package:dog_app/product/router/app_router.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+  final appRouter = AppRouter();
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+    return BlocProvider<DogBreedsBloc>(
+      create: (context) =>  DogBreedsBloc(),
+      child: MaterialApp.router(
+          title: 'Dog App',
+          routerDelegate: appRouter.delegate(),
+          routeInformationParser: appRouter.defaultRouteParser(),
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+            fontFamily: FontFamily.galanoGrotesque,
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+          )),
     );
   }
 }
