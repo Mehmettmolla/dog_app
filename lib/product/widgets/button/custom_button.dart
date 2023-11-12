@@ -30,7 +30,7 @@ class CustomButton extends StatelessWidget {
         child: Center(
           child: Text(
             title!,
-            style: AppTextStyle.whiteMedium18,
+            style: AppTextStyle.whiteSemiBold18,
             textAlign: TextAlign.center,
           ),
         )).gestureDetector(

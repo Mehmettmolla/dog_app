@@ -5,10 +5,12 @@ import 'package:dog_app/product/constant/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextfield extends StatelessWidget {
-const CustomTextfield({super.key, this.hintText, this.isEnable = true});
+const CustomTextfield({super.key, this.hintText, this.isEnable = true,  this.onChanged, this.controller});
   final String? hintText;
   final bool? isEnable;
-  @override
+  final Function(String)? onChanged;
+  final TextEditingController? controller;
+  @override 
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
@@ -24,6 +26,8 @@ const CustomTextfield({super.key, this.hintText, this.isEnable = true});
         ]
       ),
       child: TextField(
+        onChanged: onChanged,
+        controller: controller,
         decoration: InputDecoration(
           fillColor: AppColor.white,
           enabled: isEnable!,

@@ -36,38 +36,43 @@ class _BaseScaffoldViewState extends State<BaseScaffoldView> {
                     fit: BoxFit.fill,
                   ),
                 ),
-                child: BottomNavigationBar(
-                    selectedLabelStyle: AppTextStyle.blueSemiBold11,
-                    unselectedLabelStyle: AppTextStyle.blackSemiBold11,
-                    type: BottomNavigationBarType.fixed,
-                    backgroundColor: Colors.transparent,
-                    elevation: 0,
-                    currentIndex: tabController.index,
-                    onTap: (index) => {
-                          if (index == 1)
-                            {_showSettings(context)}
-                          else
-                            {
-                              context.tabsRouter.setActiveIndex(index),
-                            }
-                        },
-                    items: [
-                      BottomNavigationBarItem(
-                          icon: SvgPicture.asset(Assets.icons.icHome)
-                              .paddingOnly(top: AppPadding.defualtPadding),
-                          label: 'Home'),
-                      BottomNavigationBarItem(
-                        icon: SvgPicture.asset(Assets.icons.icSettings)
-                            .paddingOnly(top: AppPadding.defualtPadding),
-                        label: 'Settings',
-                      ),
-                    ]),
+                child: bottomNavigationBar(tabController, context),
               ),
             ],
           ),
         );
       },
     );
+  }
+
+  BottomNavigationBar bottomNavigationBar(
+      TabController tabController, BuildContext context) {
+    return BottomNavigationBar(
+        selectedLabelStyle: AppTextStyle.blueSemiBold11,
+        unselectedLabelStyle: AppTextStyle.blackSemiBold11,
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        currentIndex: tabController.index,
+        onTap: (index) => {
+              if (index == 1)
+                {_showSettings(context)}
+              else
+                {
+                  context.tabsRouter.setActiveIndex(index),
+                }
+            },
+        items: [
+          BottomNavigationBarItem(
+              icon: SvgPicture.asset(Assets.icons.icHome)
+                  .paddingOnly(top: AppPadding.defualtPadding),
+              label: 'Home'),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset(Assets.icons.icSettings)
+                .paddingOnly(top: AppPadding.defualtPadding),
+            label: 'Settings',
+          ),
+        ]);
   }
 
   void _showSettings(BuildContext context) {

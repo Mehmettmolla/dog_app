@@ -1,5 +1,4 @@
-import 'package:dog_app/feature/home/view_model/home_view_model.dart';
-import 'package:dog_app/feature/splash/view_model/splash_view_model.dart';
+import 'package:dog_app/bloc/dog_breeds/dog_breeds_bloc.dart';
 import 'package:dog_app/gen/fonts.gen.dart';
 import 'package:dog_app/product/router/app_router.dart';
 import 'package:flutter/material.dart';
@@ -13,15 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider<SplashViewModel>(
-          create: (context) => SplashViewModel(),
-        ),
-        BlocProvider<HomeViewModel>(
-          create: (context) => HomeViewModel(),
-        ),
-      ],
+    return BlocProvider<DogBreedsBloc>(
+      create: (context) =>  DogBreedsBloc(),
       child: MaterialApp.router(
           routerDelegate: appRouter.delegate(),
           routeInformationParser: appRouter.defaultRouteParser(),

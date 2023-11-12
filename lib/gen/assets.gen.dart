@@ -64,12 +64,16 @@ class $AssetsImagesGen {
   AssetGenImage get imBottomBar =>
       const AssetGenImage('assets/images/im_bottom_bar.png');
 
+  /// File path: assets/images/im_no_image.png
+  AssetGenImage get imNoImage =>
+      const AssetGenImage('assets/images/im_no_image.png');
+
   /// File path: assets/images/im_splash.png
   AssetGenImage get imSplash =>
       const AssetGenImage('assets/images/im_splash.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [imBottomBar, imSplash];
+  List<AssetGenImage> get values => [imBottomBar, imNoImage, imSplash];
 }
 
 class Assets {
