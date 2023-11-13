@@ -8,15 +8,15 @@ Dog App is a mobile application developed using Flutter. This app presents a pla
 
 ## App Screen Shots
 
-![page1](showcase/ss_1.png)
+![page1](showcase/ss_1.jpeg)
 
-![page2](showcase/ss_2.png)
+![page2](showcase/ss_2.jpeg)
 
-![page3](showcase/ss_3.png)
+![page3](showcase/ss_3.jpeg)
 
-![page4](showcase/ss_4.png)
+![page4](showcase/ss_4.jpeg)
 
-![page4](showcase/ss_5.png)
+![page4](showcase/ss_5.jpeg)
 
 
   
