@@ -1,12 +1,12 @@
 
-#DogApp
+## DogApp
 
 Dog App is a mobile application developed using Flutter. This app presents a platform for listing various dog breeds, allowing users to explore and gain information about different breeds.
 
 
 
 
-## App Screen Shots
+## App ScreenShots
 
 ![page1](showcase/ss_1.jpeg) ![page2](showcase/ss_2.jpeg)
 
