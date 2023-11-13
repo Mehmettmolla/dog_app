@@ -8,13 +8,9 @@ Dog App is a mobile application developed using Flutter. This app presents a pla
 
 ## App Screen Shots
 
-![page1](showcase/ss_1.jpeg)
+![page1](showcase/ss_1.jpeg) ![page2](showcase/ss_2.jpeg)
 
-![page2](showcase/ss_2.jpeg)
-
-![page3](showcase/ss_3.jpeg)
-
-![page4](showcase/ss_4.jpeg)
+![page3](showcase/ss_3.jpeg) ![page4](showcase/ss_4.jpeg)
 
 ![page4](showcase/ss_5.jpeg)
 
@@ -28,7 +24,7 @@ Dog App is a mobile application developed using Flutter. This app presents a pla
 - Fetching random dog images
 
   
-## Technologies
+## Technologies Used
 
 **State Management:** BLoC 
 
@@ -40,6 +36,41 @@ Dog App is a mobile application developed using Flutter. This app presents a pla
 
 **Architecture Pattern:** MVVM (Model-View-ViewModel)
 
+## Installation
 
+1. Clone this project:
 
-  
+```bash
+git clone https://github.com/Mehmettmolla/dog_app.git
+```
+2. Navigate to the project directory:
+```bash
+cd dog_app
+```
+3.Install the required dependencies:
+```bash
+flutter pub get
+```
+4.Run the application:
+```bash
+flutter run
+```
+
+## Contributing
+1. Fork this repository and create a local copy.
+2. Create a new feature branch:
+```bash
+git checkout -b new-feature
+```
+3.Commit your changes:
+```bash
+git checkout -b new-feature
+```
+4.Push your branch:
+```bash
+git push origin new-feature
+```
+Open a Pull Request
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more information.
